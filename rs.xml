@@ -16,8 +16,8 @@
 
   <!-- Validated with AOSP revision: android-13.0.0_r2 -->
   <!-- Added projects for Enchilada -->
-  <project path="device/oneplus/enchilada" name="android_device_oneplus_enchilada" revision="lineage-19.1" remote="githubglos" />
-  <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" revision="lineage-19.1" remote="githubglos" />
+  <project path="device/oneplus/enchilada" name="android_device_oneplus_enchilada" revision="lineage-19.1" remote="githublos" />
+  <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" revision="lineage-19.1" remote="githublos" />
     <!-- Prebuilt kernel repo -->
   <project path="kernel/oneplus/prebuilt" name="kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
   <project path="vendor/oneplus" name="roberto-sartori-gl/vendor-oneplus" revision="8bed754d56fe720495f19b2270a3102cc707fca8" remote="githubglssh" />
