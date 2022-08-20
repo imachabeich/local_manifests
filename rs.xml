@@ -11,11 +11,13 @@
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
+  <remote  name="githublos"
+           fetch="https://github.com/LineageOS" />
+
   <!-- Validated with AOSP revision: android-13.0.0_r2 -->
-  <!-- Added projects for Cheeseburger -->
-  <project path="device/oneplus/cheeseburger" name="device_oneplus_cheeseburger" revision="gl/lineage-19.1" remote="githubgl" />
-  <project path="device/oneplus/dumpling" name="device_oneplus_dumpling" revision="gl/lineage-19.1" remote="githubgl" />
-  <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage-19.1" remote="githubgl" />
+  <!-- Added projects for Enchilada -->
+  <project path="device/oneplus/enchilada" name="android_device_oneplus_enchilada" revision="lineage-19.1" remote="githubglos" />
+  <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" revision="lineage-19.1" remote="githubglos" />
     <!-- Prebuilt kernel repo -->
   <project path="kernel/oneplus/prebuilt" name="kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
   <project path="vendor/oneplus" name="roberto-sartori-gl/vendor-oneplus" revision="8bed754d56fe720495f19b2270a3102cc707fca8" remote="githubglssh" />
@@ -39,10 +41,10 @@
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
   </project>
-  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" revision="gl/lineage-19.1-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" revision="gl/lineage-19.1-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" revision="lineage-19.1-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-19.1" remote="githubgl" />
+  <!-- <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom-caf_sdm845_audio" revision="gl/lineage-19.1-caf-sdm845" remote="githubgl" /> -->
+  <project path="hardware/qcom/sdm845/display" name="android_hardware_qcom_sdm845_display" revision="lineage-19.1" remote="githublos" />
+  <project path="hardware/qcom/sdm845/media" name="android_hardware_qcom_sdm845_media" revision="lineage-19.1" remote="githublos" />
+  <project path="hardware/qcom/vr" name="android_hardware_qcom_vr" revision="lineage-19.1" remote="githublos" />
 
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.1" remote="githubgl" />
 
